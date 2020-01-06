@@ -1,24 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Greeting } from './Greeting';
+import { Children } from './Children';
+
 
 class View extends React.Component{
     render() {
         return (
             <div>
                 <h1>
-                    o pote poti (from view)
+                    Hello from index
                 </h1>
-                <Greeting name ="Alison" signedIn = { true }/>
-                <article>
-                    latest from view
-                </article>
             </div>    
         );
     }
 }
 
 ReactDOM.render(
-    <View />,
+    <Children/>,
     document.getElementById('root')
 );
