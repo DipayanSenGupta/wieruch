@@ -1,14 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { Greeting } from './Greeting';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-if(module.hot){
-    module.hot.accept();
+class View extends React.Component{
+    render() {
+        return (
+            <div>
+                <h1>
+                    o pote poti (from view)
+                </h1>
+                <Greeting name ="Alison" signedIn = { true }/>
+                <article>
+                    latest from view
+                </article>
+            </div>    
+        );
+    }
 }
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+ReactDOM.render(
+    <View />,
+    document.getElementById('root')
+);
