@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Children } from './Children';
+import { Parent } from './Parent';
 
 
 class View extends React.Component{
@@ -16,6 +16,6 @@ class View extends React.Component{
 }
 
 ReactDOM.render(
-    <Children/>,
+    <Parent/>,
     document.getElementById('root')
 );
