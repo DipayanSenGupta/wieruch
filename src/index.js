@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {GuineaPigsContainer} from "./GuineaPigsContainer";
+import {Input} from "./Input";
 
 
 
 ReactDOM.render(
-    <GuineaPigsContainer/>,
+    <Input/>,
     document.getElementById('root')
 );
