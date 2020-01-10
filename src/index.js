@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {ComponentWillMount} from "./ComponentWillMount";
+import {NumberGame} from "./numberGame/NumberGame";
 
 
 
 ReactDOM.render(
-    <ComponentWillMount color='red' />,
+    <NumberGame />,
     document.getElementById('root')
   );
 
-  setTimeout(() => {
-    ReactDOM.render(
-        <ComponentWillMount color='green' />,
-        document.getElementById('root')
-      );
-  },2000)
