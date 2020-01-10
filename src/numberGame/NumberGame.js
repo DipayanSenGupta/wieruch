@@ -28,7 +28,11 @@ export class NumberGame extends React.Component {
     this.startGame = this.startGame.bind(this);
     this.endGame = this.endGame.bind(this);
   }
-
+  componentDidUpdate(prevProps, prevState) {
+    if(this.state.latestClick < prevState.latestClick) {
+      this.endGame();
+    }
+  }
   createTarget(key, ms) {
     ms = ms || random(500, 2000);
     this.intervals.push(setInterval(function(){
