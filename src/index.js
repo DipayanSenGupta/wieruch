@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {NumberGame} from "./numberGame/NumberGame";
+import {EnthusedParent} from "./enthusism/EnthusedParent";
 
 
 
 ReactDOM.render(
-    <NumberGame />,
+    <EnthusedParent />,
     document.getElementById('root')
   );
 
