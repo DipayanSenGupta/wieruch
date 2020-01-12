@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Transform} from "./udemy/Transform";
+import {CurrentTime} from "./udemy/currentTime";
 
 
 
 ReactDOM.render(
-    <Transform />,
+    <CurrentTime />,
     document.getElementById('root')
   );
 
