@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {EnthusedParent} from "./enthusism/EnthusedParent";
+import {Transform} from "./udemy/Transform";
 
 
 
 ReactDOM.render(
-    <EnthusedParent />,
+    <Transform />,
     document.getElementById('root')
   );
 
